@@ -19,6 +19,27 @@
         // '===' 를 쓰는 것을 권함.
         alert(1 === "1"); // false => 데이터 타입이 달라서
         alert(1 == "1"); // true => 데이터 타입은 다르지만 의미가 같아서
-    </script>
+        
+        // undefined : 값이 없음. (프로그래머가 의도하지 않음.)
+        var a;
+        console.log(a);
+
+        // null : 값이 없음. (프로그래머가 의도함.)
+        a = null;
+        console.log(a);
+
+        console.log(undefined == null); // true
+        console.log(undefined === null); // false
+
+        console.log(true); // true
+        console.log(true == 1); // true
+        console.log(true == '1'); // true
+        console.log(true === '1'); // false
+        console.log(true === 1); // false 
+        console.log(true == 2); // false 
+        console.log(true == 3); // false 
+        console.log(0 === -0); // true
+        console.log(NaN === NaN); // false
+</script>
 </body>
 </html>
