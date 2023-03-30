@@ -28,16 +28,23 @@
         // break : 반복문을 중단시킬 수 있다.
         // continue : continue를 만나면 그 순간에만 중지됐다가 다시 반복문을 진행한다.
         
+        // for(var i = 0; i < 10; i++) {
+        //     // if(i === 5) {
+        //     //     break;
+        //     // }
+
+        //     if(i === 5) {
+        //         continue; // 5는 출력되지 않는다.
+        //     }
+
+        //     document.write('Coding Everybody!' + i + ' <br>');
+        // }
+
+        // 반복문의 중첩
         for(var i = 0; i < 10; i++) {
-            // if(i === 5) {
-            //     break;
-            // }
-
-            if(i === 5) {
-                continue; // 5는 출력되지 않는다.
+            for (var j = 0; j < 10; j++) {
+                document.write("Coding everybody" + i + j + "<br>");   
             }
-
-            document.write('Coding Everybody!' + i + ' <br>');
         }
     </script>
 </body>
