@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        if(0) {
+            console.log(1);
+        }
+        
+        // javascript에서 숫자 1은 true로 간주된다.
+        if(1) {
+            console.log(2);
+        }
+
+        // 빈 문자열인경우 false로 간주됨.
+        if('') {
+            console.log('빈 문자열1');
+        }
+
+        if(!'') {
+            console.log('빈 문자열2');
+        }
+
+        // undefined는 javascript에서 false로 간주된다.
+        if(undefined) {
+            console.log('undefined1');
+        }
+
+        if(!undefined) {
+            console.log('undefined2');
+        }
+
+        var a;
+
+        if(!a) {
+            console.log('값이 할당되지 않은 변수');
+        }
+
+        if(!null) {
+            console.log('null');
+        }
+
+        if(!NaN) {
+            console.log('NaN');
+        }
+    </script>
+</body>
+</html>
