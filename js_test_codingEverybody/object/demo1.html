@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // obejct : index를 원하는 데이터로 지정할 수 있다.(배열과 객체의 차이점)
+
+        //ver.1
+        // var grades1 = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+
+        // console.log(typeof grades1);
+        // console.log(grades1.egoing);
+        // console.log(grades1['egoing']);
+
+        // ver.2
+        // var grades2 = {};
+
+        // grades2['egoing'] = 10;
+        // grades2['k8805'] = 6;
+        // grades2['sorialgi'] = 80;
+
+        // console.log(grades2.egoing);
+        // console.log(grades2['egoing']);
+
+        // ver.3
+        var grades3 = new Object();
+
+        grades3['egoing'] = 10;
+        grades3['k8805'] = 6;
+        grades3['sorialgi'] = 80;
+
+        console.log(grades3.egoing);
+        console.log(grades3['egoing']);
+        console.log(grades3['ego' + 'ing']);
+    </script>
+</body>
+</html>
