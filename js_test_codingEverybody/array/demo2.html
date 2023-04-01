@@ -9,14 +9,23 @@
 <body>
     <script type="text/javascript">
         function get_members() {
-            return ['egoing', 'k8805', 'sorialgi'];
+            return ['egoing', 'k8805', 'sorialgi', 'hihihi'];
         }
 
         var members = get_members();
 
-        console.log(members[0]);
-        console.log(members[1]);
-        console.log(members[2]);
+        console.log(members.length);
+
+        for(var i = 0; i < members.length; i++) {
+            console.log(members[i].toUpperCase());   
+        }
+
+        // console.log(members[0].toUpperCase());
+        // console.log(members[1].toUpperCase());
+        // console.log(members[2].toUpperCase());
+
+        // var a = 'egoing';
+        // console.log( a.toUpperCase());
     </script>
 </body>
 </html>
