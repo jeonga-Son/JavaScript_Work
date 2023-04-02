@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // list(데이터)와 show(함수)를 그룹화 할 수 있다.
+        // 객체지향 프로그래밍
+        var grades = {
+            'list': {'egoing': 10, 'k8805': 20, 'sorialgi': 30},
+            'show': function() {
+                for(var name in this.list) {
+                    document.write(name + ' : ' + this.list[name] + "<br>");
+                }
+            }
+        }
+        grades.show();
+    </script>
+</body>
+</html>
